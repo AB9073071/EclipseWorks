@@ -34,7 +34,7 @@ public class LongestIncreasingSubSeq {
 				runningArray[len] = i;
 				track [i] = runningArray[len - 1];
 			} 
-			// current element is in between the small and big. does not add to the length
+			// current element is in between the small and big. does not add to the length.
 			// find the ceiling for the current element and replace the ceiling element with
 			// current element.
 			else {
