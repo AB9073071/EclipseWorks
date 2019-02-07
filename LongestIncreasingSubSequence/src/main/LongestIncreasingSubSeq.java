@@ -38,9 +38,17 @@ public class LongestIncreasingSubSeq {
 			// find the ceiling for the current element and replace the ceiling element with
 			// current element.
 			else {
-				
+				int ceiling = findCeiling(runningArray, len, entrySet, i);
+				runningArray[ceiling] = i; 
+				track [i] = runningArray[ceiling-1];
 			}
 		}
 		return null;
+	}
+
+	private static int findCeiling(int[] runningArray, int len, List<Integer> entrySet, int i) {
+		// TODO Auto-generated method stub
+		
+		return 0;
 	}
 }
