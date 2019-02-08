@@ -22,12 +22,20 @@ public class MinFlipsRequiredToMakeAlternateBooleanArray {
 		}
 		int evenBlocks = 0;
 		int oddBlocks  = 0;
-		if(entry.length%2 == 0) {
-			evenBlocks = oddBlocks = entry.length / 2;
-		} else {
-			evenBlocks = (entry.length / 2) + 1;
-			oddBlocks  = (entry.length / 2);
-		}
+		//*******
+		evenBlocks = (entry.length / 2);
+		oddBlocks  = (entry.length / 2);
+		if(entry.length%2 == 0)
+			evenBlocks = evenBlocks + 1;
+		//******
+//		evenBlocks = oddBlocks = entry.length / 2;
+//		if(entry.length%2 == 0) {
+//			//evenBlocks += 1;
+//			evenBlocks = oddBlocks = entry.length / 2;
+//		} else {
+//			evenBlocks = (entry.length / 2) + 1;
+//			oddBlocks  = (entry.length / 2);
+//		}
 		
 		// to turn on alternate even bytes;
 		// we need to turn on remaining even bytes and turn off all true odd bytes
