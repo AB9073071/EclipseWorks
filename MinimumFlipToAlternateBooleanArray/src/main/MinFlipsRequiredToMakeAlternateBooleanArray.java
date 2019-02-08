@@ -29,10 +29,10 @@ public class MinFlipsRequiredToMakeAlternateBooleanArray {
 			evenBlocks = evenBlocks + 1;
 		//******
 
-		// to turn on alternate even bytes;
+		// total flips required to turn on alternate even bytes;
 		// we need to turn on remaining even bytes and turn off all true odd bytes
 		int evenCalc = oddOn + (evenBlocks - evenOn);
-		// to turn on alternate odd bytes; We need to turn off on even location. 
+		// total flips required to turn on alternate odd bytes; We need to turn off on even location. 
 		// and wee need to turn on remaining off odd bytes.
 		int oddCalc  = evenOn + (oddBlocks - oddOn);
 		
